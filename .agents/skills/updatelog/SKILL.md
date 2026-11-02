@@ -12,6 +12,15 @@ Analyze git commits between two versions and generate a concise, actionable
 report enabling AI agents to refactor code. Focus on what to do, not what to
 know.
 
+Like a changelog but built for agents: analyzes the actual git commits between
+versions and hands the agent an actionable plan, never speculation. Language-
+agnostic (package.json / go.mod / requirements.txt / Cargo.toml / ...).
+
+Example: "Update React from 18.0.0 to 18.1.0" produces
+`react-18.0.0-to-18.1.0.md` — breaking changes with exact migration code,
+deprecations with replacement patterns, API changes requiring updates, and
+bug fixes that change behavior — which the agent then applies to the codebase.
+
 ## Workflow
 
 1. Get versions: Target version from user request, source version from
